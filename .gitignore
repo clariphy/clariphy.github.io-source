@@ -8,7 +8,7 @@ Gemfile.lock
 _site/
 assets/.DS_Store
 .bundle/
-vendor/
+/vendor/
 _cache/
 .ruby-version
 .jekyll-metadata
