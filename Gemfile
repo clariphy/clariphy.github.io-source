@@ -10,7 +10,7 @@ source 'https://rubygems.org'
 #
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
-gem 'jekyll', '~> 3.8.5'
+gem 'jekyll', '~> 3.9.0'
 
 group :development do
   # Check resulting HTML for dead links and other issues
@@ -48,3 +48,7 @@ gem 'wdm', '~> 0.1.0' if Gem.win_platform?
 # Please use rbenv to pick Ruby versions; the next Jekyll release
 # will not work with macOS's Ruby 2.3
 gem 'ffi', '= 1.10.0'
+
+gem "jekyll-environment-variables"
+gem "kramdown-parser-gfm"
+
