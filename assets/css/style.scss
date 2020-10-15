@@ -2,13 +2,69 @@
 # this ensures Jekyll reads the file to be transformed into CSS later
 ---
 
-// Colors
-$primary: #E5261F;
-$secondary: #f88379;
+// -----------------------------------------------------------------------
+// Custom color schems
+// -----------------------------------------------------------------------
+
+// -----------------------------------------------------------------------
+// Unnecessary Laws Color Scheme
+// https://www.schemecolor.com/unnecessary-laws.php
+//$custom-100: #726B7B !default;
+//$custom-200: #FDFBB7 !default;
+//$custom-300: #FDC983 !default;
+//$custom-400: #EC806D !default;
+// Colors that are used below
+// $primary: $custom-100;
+// $secondary: #f88379;
+// $black: #2f2f41;
+// $white: #ffffff;
+// $white-offset: #fff6f8;
+// $steel: #5C5A5A;
+// $dark: $primary;
+
+// -----------------------------------------------------------------------
+// Incomplete Facts Color Scheme
+// https://www.schemecolor.com/incomplete-facts.php
+// $custom-100: #7A6263 !default; 
+// $custom-200: #ADD4C9 !default;
+// $custom-300: #7EBDC3 !default;
+// $custom-400: #655F7A !default;  
+// // Colors that are used below
+// $primary: $custom-100;
+// $secondary: #f88379;
+// $black: #2f2f41;
+// $white: #ffffff;
+// $white-offset: #fff6f8;
+// $steel: #5C5A5A;
+// $dark: $primary;
+
+//--------------------------------------------------------------
+// Distinctive Style Color Scheme
+// https://www.schemecolor.com/distinctive-style.php
+$custom-100: #405176 !default;   // Police Blue
+$custom-200: #0C939E !default;   // Viridian Green
+$custom-300: #C7D0D3 !default;   // American Silver
+$custom-400: #BC4873 !default;   // Irresistible
+$custom-500: #342955 !default;   // Jacarta
+// Colors that are used below
+$primary: $custom-100;
+$primary-accent: $custom-400;
+$secondary: $custom-500;
+$secondary-accent: $custom-200;
+$tertiary: $custom-300;
 $black: #2f2f41;
 $white: #ffffff;
 $white-offset: #fff6f8;
 $steel: #5C5A5A;
+$dark: $primary;
+
+//--------------------------------------------------------------
+
+// -----------------------------------------------------------------------
+// End custom color schemes
+// -----------------------------------------------------------------------
+
+
 
 // Links
 $link-color: $primary;
@@ -23,7 +79,7 @@ $font-family-heading: 'Playfair Display', serif, -apple-system;
 // Footer
 $footer-background-color: $primary;
 $footer-text-color: $white;
-$sub-footer-background-color: darken($primary, 10%);
+$sub-footer-background-color: $secondary;
 $sub-footer-text-color: $white;
 
 // Bootstrap
@@ -110,7 +166,7 @@ header.masthead {
 }
 
 %light-purple-header {
-    color: $success;
+    color: $secondary;
     @media (prefers-color-scheme: dark) {
       color: scale-color($success, $lightness:40%)
     }
@@ -180,7 +236,8 @@ main {
     display: flex;
     flex-flow: row wrap;
     margin: 5px 0 10px 0;
-    background-color: scale-color($secondary, $lightness:60%);
+    //old background-color: scale-color($secondary, $lightness:60%);
+    background-color: $tertiary;
     border-radius: 6px;
 
     .date, .location {
@@ -235,3 +292,9 @@ main {
   text-align: center;
 }
 
+// White links against a dark background
+.navbar-dark {
+  border-bottom-color: $primary-accent;
+  border-bottom-style: solid;
+  border-bottom-width: 3px;
+}
