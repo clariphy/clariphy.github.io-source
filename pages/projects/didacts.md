@@ -9,10 +9,10 @@ team:
   - SigProcessing
   - tunnell
 awards:
-  - type: OAC
-    number: 1940074
-  - type: OAC
-    number: 1940209
+  - type: NSF
+    number: OAC-1940074
+  - type: NSF
+    number: OAC-1940209
 ---
 
 DIDACTS summary to be added
