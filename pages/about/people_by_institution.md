@@ -10,8 +10,8 @@ title: CLARIPHY Collaboration
     {% for uniindex in institution_list %}
       {%- assign univ = site.data.universities[uniindex] -%}
       <h5>{{univ.name}}</h5>
-<div class="container pt-6 pb-6">
-  <div class="row pt-6 pb-6">
+<div class="container pt-1 pb-3">
+  <div class="row">
       {%- assign sorted_mapping = "" | split:"," -%}
       {%- for memberid in univ.personnel -%}
         {%- assign member = site.data.people[memberid] -%}
