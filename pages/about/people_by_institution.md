@@ -1,16 +1,17 @@
 ---
-permalink: /about/people.html
+permalink: /about/people_by_institution.html
 layout: people
 title: CLARIPHY Collaboration
 ---
 
 {% include institution_list.html %}
 
-<div class="container pt-6 pb-6">
-  <div class="row pt-6 pb-6">
+<div>
     {% for uniindex in institution_list %}
       {%- assign univ = site.data.universities[uniindex] -%}
-
+      <h5>{{univ.name}}</h5>
+<div class="container pt-6 pb-6">
+  <div class="row pt-6 pb-6">
       {%- assign sorted_mapping = "" | split:"," -%}
       {%- for memberid in univ.personnel -%}
         {%- assign member = site.data.people[memberid] -%}
@@ -28,13 +29,8 @@ title: CLARIPHY Collaboration
            {% assign person = site.data.people[item] %}
            {% include standard_person_card_2.md %}
       {% endfor %}
-    {% endfor %}
   </div>
 </div>
-
-
-
-
-
-
+    {% endfor %}
+</div>
 

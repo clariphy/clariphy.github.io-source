@@ -9,7 +9,6 @@
 	 {% else %}
             <h2 class="team-name">{{person.name}}</h2>
          {% endif %}
-         <p class="team-institution">{{person.institution}}</p>
          <p class="team-description"><i>{{person.title}}</i></p>
          </div>
        </div>

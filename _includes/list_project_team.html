@@ -9,7 +9,7 @@
     {%- assign person = person_hash[1] -%}
     {%- if person.shortname == member -%}
       {%- assign found=true -%}
-    {% include standard_person_card_2.md %} 
+    {% include standard_person_card.md %} 
     {%- endif -%}
   {%- endfor -%}
   {%- unless found -%}

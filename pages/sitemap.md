@@ -11,22 +11,11 @@ different page categories (using our custom frontmatter tag "pagetype").
 {% endcomment %}
 
 <br>
-<b>Focus Area pages:</b>
-<ul>
-{% assign sorted = site.pages | sort_natural: 'title' %}
-{% for mypage in sorted %}
-  {% if mypage.pagetype == 'focus-area' %} 
-  <li><a href="{{mypage.permalink}}">{{ mypage.title }}</a></li>
-  {% endif %}
-{% endfor %}
-</ul>
-
-<br>
 <b>Project pages:</b>
 <ul>
 {% assign sorted = site.pages | sort_natural: 'title' %}
 {% for mypage in sorted %}
-  {% if mypage.pagetype == 'project' %} 
+  {% if mypage.layout == 'project' %} 
   <li><a href="{{mypage.permalink}}">{{ mypage.title }}</a></li>
   {% endif %}
 {% endfor %}
@@ -38,17 +27,6 @@ different page categories (using our custom frontmatter tag "pagetype").
 {% assign sorted = site.pages | sort_natural: 'title' %}
 {% for mypage in sorted %}
   {% if mypage.pagetype == 'doc' %} 
-  <li><a href="{{mypage.permalink}}">{{ mypage.title }}</a></li>
-  {% endif %}
-{% endfor %}
-</ul>
-
-<br>
-<b>IRIS-HEP Fellow pages:</b>
-<ul>
-{% assign sorted = site.pages | sort_natural: 'title' %}
-{% for mypage in sorted %}
-  {% if mypage.pagetype == 'fellow' %} 
   <li><a href="{{mypage.permalink}}">{{ mypage.title }}</a></li>
   {% endif %}
 {% endfor %}
