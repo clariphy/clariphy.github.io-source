@@ -1,7 +1,7 @@
 ---
 permalink: /about/people.html
 layout: people
-title: CLARIPHY Collaborators
+title: CLARIPHY Collaboration
 ---
 
 {% include institution_list.html %}

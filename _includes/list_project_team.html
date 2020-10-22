@@ -1,20 +1,21 @@
 <h3>Team</h3>
-<ul>
+
+<div class="container pt-6 pb-6">
+  <div class="row pt-6 pb-6">
+
 {%- for member in include.team -%}
   {%- assign found=false -%}
   {%- for person_hash in site.data.people -%}
     {%- assign person = person_hash[1] -%}
     {%- if person.shortname == member -%}
       {%- assign found=true -%}
-      {%- if person.website -%}
-        <li> <a href="{{person.website}}">{{ person.name }}</a> </li>
-      {%- else -%}
-        <li> {{ person.name }} </li>
-      {%- endif -%}
+    {% include standard_person_card_2.md %} 
     {%- endif -%}
   {%- endfor -%}
   {%- unless found -%}
     <li> {{ member }} </li>
   {%- endunless -%}
 {%- endfor -%}
-</ul>
+
+  </div>
+</div>

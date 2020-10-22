@@ -1,10 +1,10 @@
 ---
 permalink: /projects.html
 layout: default
-title: IRIS/HEP Projects
+title: CLARIPHY Projects
 ---
 
-# IRIS-HEP Projects
+# CLARIPHY Projects
 
 <style>
 table {
