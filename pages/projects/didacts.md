@@ -4,7 +4,7 @@ layout: project
 title: DIDACTS
 shortname: didacts
 description: Data-Intensive Discovery Accelerated by Computational Techniques for Science (DIDACTS)
-url: https://didacts.org
+website: https://didacts.org
 team:
   - SigProcessing
   - tunnell
