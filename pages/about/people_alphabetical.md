@@ -14,7 +14,6 @@ title: CLARIPHY Collaboration
   {%- endfor -%}
 {%- endfor -%}
 
-
 {%- assign sorted_mapping = "," | split:"," -%}
 {%- for member in site.data.people -%}
   {%- assign sortable_name = member[1].name | split:" " | reverse | join:" " -%}
@@ -24,8 +23,6 @@ title: CLARIPHY Collaboration
   {%- assign sorted_mapping = sorted_mapping | push: item -%}
 {%- endfor -%}
 {%- assign sorted_people = sorted_mapping | sort -%}
-
-<h1>Full Team</h1><br>
 
 <div class="container-fluid">
 <div class="row">
