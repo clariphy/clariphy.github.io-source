@@ -1,7 +1,7 @@
 name: Christopher Tunnell
 shortname: tunnell
 title: Assistant Professor of Physics, Astronomy, and Computer Science
-active: green
+active: true
 institution: Rice University
 website: https://astroparticle.rice.edu
 photo: /assets/images/team/Christopher-Tunnell.jpg

@@ -1,7 +1,7 @@
 name: Luca Carloni
 shortname: Luca-Carloni
 title: Professor of Computer Science
-active: green
+active: true
 institution: Columbia University
 website: http://www.cs.columbia.edu/~luca/
 photo: /assets/images/team/Luca-Carloni.jpg
