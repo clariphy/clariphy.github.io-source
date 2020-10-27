@@ -50,6 +50,7 @@ exclude:
   # Added
   - _cache
   - _scripts
+  - _sources
   - bin
   - .github
 

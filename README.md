@@ -16,10 +16,3 @@ gem install bundler
 bundle install
 bundle exec rake serve
 ```
-
-## Images from pexels
-
-https://www.pexels.com/photo/white-chess-piece-on-top-of-chess-board-814133/
-https://www.pexels.com/license/
-
-222F3E

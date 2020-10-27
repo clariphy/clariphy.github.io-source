@@ -140,12 +140,20 @@ body {
 
 header.masthead {
   color: white;
+  text-shadow: black 0px 0px 5px;
   margin-bottom: 0;
   margin-top: 15px;
+  background-color: black;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: auto 135%;
+  @media only screen and (min-width: 768px) {
+    background-size: auto 125%;
+  }
   .site-heading {
-    padding: 25px 0px 25px;
+    padding: 15px 0px 35px;
     @media only screen and (min-width: 768px) {
-      padding: 60px 0px 60px;
+      padding: 40px 0px 80px;
     }
   }
   .site-heading > h2 {
