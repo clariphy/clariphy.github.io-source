@@ -4,7 +4,7 @@ layout: default
 title: CLARIPHY Projects
 ---
 
-# CLARIPHY Projects
+# Projects involving CLARIPHY collaborators
 
 <ul>
 {% assign sorted = site.pages | sort_natural: 'title' %}
