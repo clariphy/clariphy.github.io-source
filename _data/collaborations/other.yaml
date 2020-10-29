@@ -1,8 +1,4 @@
 
-- name: A Common Track Reconstruction Project
-  short: ACTS
-  url: https://gitlab.cern.ch/acts
-
 - name: Scikit-HEP
   short: Scikit-HEP
   url: http://scikit-hep.org
