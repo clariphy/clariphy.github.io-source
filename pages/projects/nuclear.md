@@ -1,7 +1,7 @@
 ---
 permalink: /projects/nuclear.html
 layout: project
-title: Nuclear Physics
+title: ALPhA
 shortname: nuclear
 description: Machine Learning Approaches for Accelerating Scientific Discovery in Nuclear Physics
 website: https://alpha-davidson.github.io
