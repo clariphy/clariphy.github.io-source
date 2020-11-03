@@ -1,14 +1,13 @@
 ---
 permalink: /projects/nuclear.html
 layout: project
-title: nuclear physics
+title: Nuclear Physics
 shortname: nuclear
 description: Machine Learning Approaches for Accelerating Scientific Discovery in Nuclear Physics
 website: https://alpha-davidson.github.io
 team:
-  - SigProcessing
-  - tunnell
-  - Shatkay
+  - mpkuchera
+  - Ramanujan
 awards:
   - type: NSF
     number: NSF-2012865
@@ -16,12 +15,22 @@ awards:
     number: LDRD-19-13
 ---
 
-![ALPhA logo](/assets/images/ALPhA_logo.png)The three-year project titled, “Machine Learning Approaches for Accelerating Scientific Discovery in Nuclear Physics,” enables collaboration between theoretical and experimental nuclear physicists and computer scientists to aid in scientific discoveries using state-of-the-art machine learning methods at the Facility for Rare Isotope Beams, Argonne National Laboratory, Thomas Jefferson National Accelerator Facility, and the upcoming Electron Ion Collider. This NSF-funded project is an integral part of the ALPhA group (Algorithms for Learning in Physics Applications), an ongoing research collaboration headed by Professors Kuchera and Ramanujan at Davidson College.
 
-The purpose of DIDACTS is to pioneer the data science and machine learning algorithms needed to enable discovery in the physical sciences, specifically by pursuing physics-informed machine learning.  Specifically, current state-of-the-art approaches are often unable to include known priors and physical constraints, while also not often providing uncertainties posterior distributions.   An interdiscplinary appraoch to this problem aims to advance both computational methods and fundamental research by having collaborators who are from electrical and computer engineering, computer and information sciences, and astroparticle physics.
+<img src="/assets/images/ALPhA_logo.png" width="150px" alt="ALPhA logo" />
 
-DIDACTS has chosen to use the [XENONnT experiment](https://xenonnt.org) as an example of an experiment at the forefront of difficult measurements within particle physics.  The simplicity of this experiment relative to normal particle physics experiments make it more dependent on the data science and machine learning methods used to extract the optimal amount of information from the experiment.  Discoveries made by XENON1T ranged from observing the longest halflife ever measured to observing anamolous electronic recoils.  However, it is best known for being the most sensitive direct detection dark matter to date.  
+This project, *Machine Learning Approaches for Accelerating Scientific Discovery in Nuclear Physics*, enables collaboration between theoretical and experimental nuclear physicists and computer scientists to aid in scientific discoveries using state-of-the-art machine learning methods at the Facility for Rare Isotope Beams, Argonne National Laboratory, Thomas Jefferson National Accelerator Facility, and the upcoming Electron Ion Collider. This NSF-funded project is an integral part of the ALPhA group (Algorithms for Learning in Physics Applications), an ongoing research collaboration headed by Professors Michelle Kuchera and Raghu Ramanujan at Davidson College.
 
-Within DIDACTS, we are exploring two key thrusts.  One centers on graph machine learning to create architectures more representative of the underlying science, while allowing these algorithms to self-learn the geometry and detector physics, and also allow the inclusion of physical contraints and learning from data.  The other thrust centers on the concept uncertainty, which is the key ingredient of any science measurement, and how we can enable machine learning algorithms to communicate their uncertainty when seeing new data.
+This project has three goals:
+- **GOAL 1:** To improve data analysis methods for experiments at the Facility for Rare Isotope Beams (FRIB) by increasing analysis speed and accuracy, with special attention towards the Active-Target Time Projection Chamber, the most data-intensive of the detector systems at FRIB.
+         - [*Machine Learning Methods for Track Classification in the AT-TPC*](https://arxiv.org/abs/1810.10350), M.P. Kuchera, R. Ramanujan, J.Z. Taylor, R.R. Strauss, D. Bazin, J. Bradt, R. Chen. Nucl. Instr. Meth. A. (2019) [https://doi.org/10.1016/j.nima.2019.05.097](https://doi.org/10.1016/j.nima.2019.05.097)
+         - [*Unsupervised Learning for Identifying Events in Active Target Experiments*](https://arxiv.org/abs/2008.02757) R. Solli, D. Bazin, M.P. Kuchera, R.R. Strauss, Morten Hjorth-Jensen, *submitted for review*, 2020.
+  - **GOAL 2:** To create novel theoretical models informed by experimental data for use at the Thomas Jefferson National Accelerator Facility and the Electron-Ion Collider. This work uses generative adversarial networks and mixture density neural networks, with investigations into other novel methods.
+       -  [*cFAT-GAN: Conditional Simulation of Electron-Proton Scattering Events with Variate Beam Energies by a Feature Augmented and Transformed Generative Adversarial Network*](tbd) L. Velasco, E. McClellan, N. Sato, P. Ambrozewicz, T. Liu, W. Melnitchouk, M.P. Kuchera, Yasir Alanazi, Yaohang Li, *accepted for publication, ICMLA*, 2020.
+       - [*AI-based Monte Carlo event generator for electron-proton scattering*](https://arxiv.org/abs/2008.03151) Y. Alanazi, P. Ambrozewicz, M.P. Kuchera, Y. Li, T. Liu, R.E.
+  McClellan, W. Melnitchouk, E. Pritchard, M. Robertson, N. Sato, R. Strauss,
+  L. Velasco, *submitted for review*, 2020.
+ - **GOAL 3:** To optimize beam delivery techniques at FRIB and Argonne National Laboratory by investigating reinforcement learning for automatic beam tuning.
 
-Both of these thrusts are trying to tackle core science questions, which also serve as our way to evaluate our methods.  We aim to overcome so-called 'surface events' caused by reconstruction not knowing about the detector geometry, where this is one of the biggest steps we can make to advance our dark matter analysis.  The second science question is neutrinoless double-beta decay, where our reconstruction resolution is directly related to our sensitivity to this process, and which tells us fundamental properties of the neutrino.  
+
+This work advances scientific understanding through research that is in line
+with the [2015 Long Range Plan for nuclear physics](http://science.energy.gov/~/media/np/nsac/pdf/docs/nuclear_science_low_res.pdf) and the [community-defined needs](https://arxiv.org/abs/2006.05422) for AI in nuclear physics.
