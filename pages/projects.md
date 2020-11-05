@@ -9,10 +9,8 @@ title: CLARIPHY Projects
 <ul>
 {% assign sorted = site.pages | sort_natural: 'title' %}
 {% for mypage in sorted %}
-  {% if mypage.layout == 'project' %}
+{% if mypage.layout == 'project' %} 
   <li><a href="{{mypage.permalink}}">{{ mypage.title }}</a> - {{ mypage.description }} </li>
-  {% endif %}
+{% endif %}
 {% endfor %}
 </ul>
-
-
