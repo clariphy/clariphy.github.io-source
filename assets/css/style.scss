@@ -46,11 +46,14 @@
 // $custom-300: #C7D0D3 !default;   // American Silver
 // $custom-400: #BC4873 !default;   // Irresistible
 // $custom-500: #342955 !default;   // Jacarta
-$custom-100: #1E3040 !default;   // Police Blue
-$custom-200: #364959 !default;   // Viridian Green
-$custom-300: #6A7349 !default;   // American Silver
-$custom-400: #B4BF5E !default;   // Irresistible
-$custom-500: #D5D962 !default;   // Jacarta
+
+//--------------------------------------------------------------
+// MK Color Scheme
+$custom-100: #1E3040 !default;
+$custom-200: #364959 !default;
+$custom-300: #6A7349 !default;
+$custom-400: #B4BF5E !default;
+$custom-500: #D5D962 !default;
 
 // Colors that are used below
 $primary: $custom-100;
@@ -86,7 +89,7 @@ $font-family-heading: 'Playfair Display', serif, -apple-system;
 $footer-background-color: $primary;
 $footer-text-color: $white;
 $sub-footer-background-color: $secondary;
-$sub-footer-text-color: $white;
+$sub-footer-text-color: $black;
 
 // Bootstrap
 @import 'bootstrap-variables';
