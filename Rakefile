@@ -13,7 +13,7 @@ CLOBBER << '_cache' << '.sass-cache' << '_data/indico'
 desc 'Preview on a local machine'
 task :serve do
   trap('SIGINT') { exit }
-  jekyll 'serve', :incremental, :livereload
+  jekyll 'serve', :livereload
 end
 
 desc 'Build on a local machine'
