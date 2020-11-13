@@ -4,30 +4,31 @@ layout: project
 title: Algorithms for Allen
 shortname: Allen
 description: Extending the physics reach of LHCb by developing and deploying algorithms for a fully GPU-based first trigger stage
-website: https://ml-hep.org
+## website: https://ml-hep.org
 team:
-  - Mike Sokoloff
-  - Mike Williams
-  - Marian Stahl
+  - mdsokoloff
+  - mityinzer
+  - marianstahl
 awards:
   - type: NSF
     number: OAC-2004364
   - type: NSF
     number: OAC-2004645
 ---
-The data sets collected by the LHC experiments are some of the largest in the world. For example, 
-the sensor arrays of the LHCb experiment produce about 100 TB/s 
+
+Data sets collected by  LHC experiments are some of the largest in the world. For example, 
+the sensor arrays of the LHCb experiment produce about 100 terabytes per second 
 and close to a zettabyte per year. 
 Even after drastic data-reduction performed by custom-built 
 read-out electronics, the data volume is still about 10 exabytes per year. 
-Such large data sets cannot be stored indefinitely; therefore, all high energy physics (HEP) 
+Such large data sets cannot be stored indefinitely so all high energy physics (HEP) 
 experiments employ a second data-reduction scheme executed in real time by a data-ingestion 
-system - referred to as a trigger system in HEP - to decide whether each event is to be persisted for 
+system -- referred to as a trigger system -- to decide whether each event is to be persisted for 
 future analysis or permanently discarded. The primary goal of this project is developing and 
-deploying software that will maximize the performance of the LHCb trigger system - 
-running its first processing stage on GPUs - so that the full physics discovery potential of LHCb is realized.
+deploying software that will maximize the performance of the LHCb trigger system,
+running its first processing stage on GPUs, so that the full physics discovery potential of LHCb is realized.
 
-The LHCb detector is being upgraded for Run 3 (which will start to record data in 2022), 
+The LHCb detector is being upgraded for Run 3 
 when the trigger system will need to process 25 exabytes per year. 
 Currently, only 0.3 of the 10 exabytes per year processed by the trigger is analyzed using 
 high-level computing algorithms; the rest is discarded prior to this stage using 
