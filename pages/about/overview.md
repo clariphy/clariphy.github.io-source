@@ -4,9 +4,11 @@ layout: default
 title: Overview
 ---
 
-<h1>Overview</h1>
+<h1>Our Mission</h1>
 
 The Community Laboratory for AI Research at the Intersection with Physics (CLARIPHY) is a multidisciplinary collaborative effort between the particle physics and artificial intelligence research communities. It aims to understand how AI can radically extend the discovery potential of large particle physics experiments while simultaneously providing a unique environment for driving AI research in new directions. 
+
+<h1>Particle Physics and Artificial Intelligence</h1>
 
 From the mid-1980’s through the discovery of the Higgs Boson, fundamental physics has pursued and experimentally discovered and measured the last elements of the Standard Model. Guided by the expected structure of the Standard Model, these were "engineered" discoveries. The community knew roughly the kind of thing that it was looking for, even if it did not know exactly where and how it would appear. 
 As such, it was able to prepare roadmaps such as "The Higgs Hunter’s Guide" and "The BaBar Physics Book" to search for the last pieces of the Standard Model.
