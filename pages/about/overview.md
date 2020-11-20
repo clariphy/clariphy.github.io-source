@@ -6,7 +6,7 @@ title: Overview
 
 <h1>Our Mission</h1>
 
-The Community Laboratory for AI Research at the Intersection with Physics (CLARIPHY) is a multidisciplinary collaborative effort between the particle physics and artificial intelligence research communities. It aims to understand how AI can radically extend the discovery potential of large data-intensive particle physics experiments while simultaneously providing a unique environment for driving AI research in new directions. Our collaboration pursues research activities which advance both required foundational research in this area as well as build pathways for transformative applications in physics.
+The Community Laboratory for AI Research at the Intersection with Physics (CLARIPHY) is a multidisciplinary collaborative effort between the particle physics and artificial intelligence research communities. It aims to understand how AI can radically extend the discovery potential of large data-intensive particle physics experiments while simultaneously providing a unique environment for driving AI research in new directions. Our collaboration pursues research activities which advance the required foundational research in this area as well as building the pathways for transformative applications in physics.
 
 <h1>Particle Physics and Artificial Intelligence</h1>
 
@@ -32,4 +32,8 @@ The discovery potential in particle physics is tremendously enhanced because AI 
 <!--
 ![CLARIPHY Institutions Map](/assets/images/clariphy-map.png)
 -->
+
+<a href="/assets/images/iris-hep-map.png">
+<img alt="Experimental Particle Physics" src="/assets/images/clariphy-experiments.jpg" style="width:100%;height:auto;"/>
+</a>
 
