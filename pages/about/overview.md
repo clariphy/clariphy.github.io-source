@@ -33,7 +33,7 @@ The discovery potential in particle physics is tremendously enhanced because AI 
 ![CLARIPHY Institutions Map](/assets/images/clariphy-map.png)
 -->
 
-<a href="/assets/images/iris-hep-map.png">
+<a href="/assets/images/clariphy-experiments.jpg">
 <img alt="Experimental Particle Physics" src="/assets/images/clariphy-experiments.jpg" style="width:100%;height:auto;"/>
 </a>
 
