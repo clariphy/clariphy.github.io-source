@@ -9,6 +9,7 @@
 
 {% if pubs.size > 0 %}
 <h3>Publications</h3>
+<div>
 <ul>
   {% for pub in sorted_publications %}
     {% if pub.citation-count and pub.citation-count > 0 %}
@@ -22,4 +23,5 @@
     <li> {% include print_pub.html pub=pub %} </li>
   {% endfor %}
 </ul>
+</div>
 {% endif %}
