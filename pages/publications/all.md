@@ -5,7 +5,7 @@ title: Publications
 draft: false
 ---
 
-## Publications by the IRIS-HEP team
+## Related publications by CLARIPHY collaborators
 
 {% assign doPublications = 0 %}
 {% include get_pub_list.html %}
