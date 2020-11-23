@@ -7,10 +7,10 @@ description: Scalable CyberInfrastructure for Artificial Intelligence and Likeli
 website: https://github.com/scailfin
 team:
   - mdhildreth
-  - Kyle Cranmer (NYU)
-  - Heiko Mueller (NYU)
-  - Mark Neubauer (UIUC)
-  - Dan Katz (UIUC)
+  - cranmer
+  - heikomuller
+  - msneubauer
+  - danielskatz
 awards:
   - type: NSF
     number: OAC-1841456

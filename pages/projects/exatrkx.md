@@ -9,6 +9,7 @@ team:
   - AdamAurisano
   - isobelojalvo
   - savvy379
+  - p_calafiura
 awards:
   - type: DOE CompHEP
     number: DE-AC02-05CH11231
