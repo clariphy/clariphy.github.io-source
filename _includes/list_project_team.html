@@ -16,6 +16,8 @@
     <li> {{ member }} </li>
   {%- endunless -%}
 {%- endfor -%}
-
   </div>
+{% if page.largeteam and page.largeteam != blank %}
+See the project website for a full listing of the collaborators on this project.
+{% endif %}
 </div>

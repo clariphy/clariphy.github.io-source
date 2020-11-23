@@ -10,6 +10,7 @@ team:
   - isobelojalvo
   - savvy379
   - p_calafiura
+largeteam: true
 awards:
   - type: DOE CompHEP
     number: DE-AC02-05CH11231
