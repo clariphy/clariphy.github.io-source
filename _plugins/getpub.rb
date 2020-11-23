@@ -56,6 +56,7 @@ module Publications
     def prepare(pub, name)
       pub['focus-area'] ||= []
       pub['project'] ||= []
+      pub['filename'] = name
 
       force_array(pub, 'project')
 
@@ -106,6 +107,8 @@ module Publications
       end
     end
 
+    # rubocop:disable Metrics/CyclomaticComplexity, Metrics/PerceivedComplexity
+
     # Look up inspire data *if* inspire-id given
     def inspire(pub)
       return unless pub.key? 'inspire-id'
@@ -145,14 +148,18 @@ module Publications
       j = data.dig('publication_info', 0) # This may be nil
       journal =
         if j&.key?('journal_title') && j&.key?('year')
+          pub['needs-nsf-par'] = true unless pub.key?('needs-nsf-par')
           "#{j['journal_title']} #{j['journal_volume']} #{j['artid']} (#{j['year']})"
         elsif data.key? 'arxiv_eprints'
+          pub['needs-nsf-par'] = false unless pub.key?('needs-nsf-par')
           "arXiv #{data['arxiv_eprints'][0]['value']}"
         else
           'Unknown'
         end
       pub['citation'] ||= "#{mini_authors}, #{journal}"
     end
+    #
+    # rubocop:enable Metrics/CyclomaticComplexity, Metrics/PerceivedComplexity
 
     # Load a yaml file from the cache
     # Return a bool if an update is needed
@@ -161,7 +168,7 @@ module Publications
 
       f = YAML.load_file fname
       pub.map do |key, value|
-        oldvalue = f.dig(key)
+        oldvalue = f[key]
         return false unless oldvalue == value
       end
 
