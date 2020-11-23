@@ -6,7 +6,7 @@ shortname: scailfin
 description: Scalable CyberInfrastructure for Artificial Intelligence and Likelihood Free Inference (SCAILFIN)
 website: https://github.com/scailfin
 team:
-  - Hildreth
+  - mdhildreth
   - Kyle Cranmer (NYU)
   - Heiko Mueller (NYU)
   - Mark Neubauer (UIUC)
