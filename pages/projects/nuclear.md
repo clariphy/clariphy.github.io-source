@@ -7,9 +7,10 @@ description: Machine Learning Approaches for Accelerating Scientific Discovery i
 website: https://alpha-davidson.github.io
 team:
   - mpkuchera
+  - rramanujan
 awards:
   - type: NSF
-    number: NSF-2012865
+    number: PHY-2012865
   - type: DOE
     number: LDRD-19-13
 ---
