@@ -6,6 +6,8 @@ title: CLARIPHY Projects
 
 # Projects involving CLARIPHY collaborators
 
+We list here a number of small projects which are underway and which involve CLARIPHY collaborators.
+
 <ul>
 {% assign sorted = site.pages | sort_natural: 'title' %}
 {% for mypage in sorted %}
