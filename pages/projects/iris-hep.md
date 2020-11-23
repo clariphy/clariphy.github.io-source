@@ -4,7 +4,7 @@ layout: project
 title: IRIS-HEP
 shortname: iris-hep
 description: Institute for Research and Innovation in Software for High Energy Physics
-## website: https://iris-hep.org
+website: https://iris-hep.org
 team:
   - pelmer
   - mdsokoloff

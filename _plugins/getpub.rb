@@ -40,6 +40,20 @@ module Publications
 
     private
 
+    def str_to_date(input, name)
+      # Fail nicely if nil
+      raise "No date for #{name}, a date is required" if input.nil?
+
+      # Normalize date
+      begin
+        Date.parse(input)
+      rescue Date::Error
+        # If this is missing the day, try adding it. If it errors again, give
+        # up and don't catch the second error.
+        Date.parse("#{input}-01")
+      end
+    end
+
     # Check for and add submitted_to information
     def submitted_to(pub, name)
       submitted_to = pub['submitted-to']
@@ -56,6 +70,7 @@ module Publications
     def prepare(pub, name)
       pub['focus-area'] ||= []
       pub['project'] ||= []
+      pub['filename'] = name
 
       force_array(pub, 'project')
 
@@ -63,7 +78,7 @@ module Publications
       prepare_focus_area(pub, name) if pub['focus-area'].empty?
 
       msg = 'You must have a project or focus-area in every publication'
-      raise StandardError, msg unless pub.key? 'focus-area'
+      raise msg unless pub.key? 'focus-area'
 
       # Make sure the focus-area is a list
       force_array(pub, 'focus-area')
@@ -81,7 +96,7 @@ module Publications
       pub['project'].each do |p|
         pg = @site.pages.detect { |page| page.data['shortname'] == p }
         msg = "Project #{pub['project']} missing! Cannot find focus-area for #{name}."
-        raise StandardError, msg unless pg
+        raise msg unless pg
 
         new_fas = pg.data['focus-area']
         new_fas = [new_fas] if new_fas.is_a? String
@@ -106,6 +121,8 @@ module Publications
       end
     end
 
+    # rubocop:disable Metrics/CyclomaticComplexity, Metrics/PerceivedComplexity
+
     # Look up inspire data *if* inspire-id given
     def inspire(pub)
       return unless pub.key? 'inspire-id'
@@ -127,8 +144,8 @@ module Publications
       # This *only* sets data if the previous line is nil
       pub['date'] ||= data.dig('imprints', 0, 'date')
 
-      # Normalize date (if Nil, this should fail (date required))
-      pub['date'] = Date.parse(pub['date']) unless pub['date'].is_a? Date
+      # Normalize date
+      pub['date'] = str_to_date(pub['date'], recid) unless pub['date'].is_a? Date
 
       pub['citation-count'] ||= data['citation_count']
 
@@ -145,14 +162,18 @@ module Publications
       j = data.dig('publication_info', 0) # This may be nil
       journal =
         if j&.key?('journal_title') && j&.key?('year')
+          pub['needs-nsf-par'] = true unless pub.key?('needs-nsf-par')
           "#{j['journal_title']} #{j['journal_volume']} #{j['artid']} (#{j['year']})"
         elsif data.key? 'arxiv_eprints'
+          pub['needs-nsf-par'] = false unless pub.key?('needs-nsf-par')
           "arXiv #{data['arxiv_eprints'][0]['value']}"
         else
           'Unknown'
         end
       pub['citation'] ||= "#{mini_authors}, #{journal}"
     end
+    #
+    # rubocop:enable Metrics/CyclomaticComplexity, Metrics/PerceivedComplexity
 
     # Load a yaml file from the cache
     # Return a bool if an update is needed
@@ -161,7 +182,7 @@ module Publications
 
       f = YAML.load_file fname
       pub.map do |key, value|
-        oldvalue = f.dig(key)
+        oldvalue = f[key]
         return false unless oldvalue == value
       end
 
