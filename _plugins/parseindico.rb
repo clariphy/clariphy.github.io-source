@@ -10,7 +10,7 @@ require 'openssl'
 
 module Indico
   MEETING_IDS = {
-#    topical: 10570,
+    topical: 1253,
 #    nsfreport: 11204,
 #    sb: 10989,
 #    ap: 11519
@@ -92,7 +92,7 @@ module Indico
         end
       end
 
-      "https://indico.cern.ch#{join_url(indico_id, kargs)}"
+      "https://indico.fnal.gov#{join_url(indico_id, kargs)}"
     end
   end
 end
