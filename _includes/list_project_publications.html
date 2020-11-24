@@ -11,7 +11,7 @@
 <h3>Publications</h3>
 <div>
 <ul>
-  {% for pub in sorted_publications %}
+  {% for pub in pubs %}
     {% if pub.citation-count and pub.citation-count > 0 %}
       {% assign cited = " [" | append: pub.citation-count | append: " citations]" %}
       {% if pub.inspire-id %}
