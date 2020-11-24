@@ -9,7 +9,6 @@ team:
   - georgiak
   - Luca-Carloni
   - GiuseppeDiGuglielmo
-largeteam: true
 awards:
 ---
 
