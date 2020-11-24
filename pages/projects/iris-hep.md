@@ -8,7 +8,10 @@ website: https://iris-hep.org
 team:
   - pelmer
   - mdsokoloff
+  - AtluriLab
   - mityinzer
+  - cranmer
+largeteam: true
 awards:
   - type: NSF
     number: OAC-1836650
