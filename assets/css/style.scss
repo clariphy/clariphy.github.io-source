@@ -49,11 +49,12 @@
 
 //--------------------------------------------------------------
 // MK Color Scheme
-$custom-100: #1E3040 !default;
-$custom-200: #364959 !default;
-$custom-300: #6A7349 !default;
-$custom-400: #B4BF5E !default;
-$custom-500: #D5D962 !default;
+$custom-100: #1E3040 !default;  // steel blue
+$custom-200: #364959 !default;  // dark blue
+$custom-300: #6A7349 !default;  // dark pea green
+$custom-400: #B4BF5E !default;  // pea green
+$custom-500: #D5D962 !default;  // light pea green 
+$custom-600: #402E1E !default;  // #1E3040 complement
 
 // Colors that are used below
 $primary: $custom-100;
@@ -247,12 +248,12 @@ main {
 
   .mainpage-core h4 {
     //@extend %light-purple-header;
-    color: $custom-400;
+    color: $custom-600;
     font-size: 1.3rem;
     margin-bottom: .2rem;
   }
 
-  ul {
+  ule{
     margin-top: 0.5rem;
     margin-bottom: 1rem;
     padding: 0px;
@@ -264,7 +265,7 @@ main {
     flex-flow: row wrap;
     margin: 5px 0 10px 0;
     //old background-color: scale-color($secondary, $lightness:60%);
-    background-color: $tertiary;
+    background-color: $custom-500;
     border-radius: 6px;
 
     .date, .location {
@@ -272,7 +273,7 @@ main {
     }
 
     .date {
-      background-color: $success;
+      background-color: $custom-200;
       border-radius: 6px 0px 0px 0px;
       flex: 0 2 35%;
       font-size: 0.8rem;
@@ -280,7 +281,7 @@ main {
     }
 
     .location {
-      background-color: $success;
+      background-color: $custom-200;
       border-radius: 0px 6px 0px 0px;
       flex: 0 3 65%;
       text-align: right;
