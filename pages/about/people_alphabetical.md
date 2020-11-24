@@ -31,7 +31,9 @@ title: CLARIPHY Collaboration
   {%- assign memberid = pair[1] -%}
   {%- if valid_people_ids contains memberid -%}
     {% assign person = site.data.people[memberid] %}
-    {% include standard_person_card.md %}
+    {% if person.active and person.active == true %}
+      {% include standard_person_card.md %}
+    {% endif %}
   {% endif %}
 {% endfor %}
 </div>
