@@ -53,7 +53,7 @@ $custom-100: #1E3040 !default;  // steel blue
 $custom-200: #364959 !default;  // dark blue
 $custom-300: #6A7349 !default;  // dark pea green
 $custom-400: #B4BF5E !default;  // pea green
-$custom-500: #D5D962 !default;  // light pea green 
+$custom-500: #D5D962 !default;  // light pea green
 $custom-600: #402E1E !default;  // #1E3040 complement
 
 // Colors that are used below
@@ -146,11 +146,13 @@ body {
   }
 }
 
-// From IRIS-HEP, edited 2 Nov 2020 MPK
-h4 {
+// From IRIS-HEP, edited 25 Nov 2020 MPK
+h1, h2, h4 {
   font-family: $font-family-base;
   color: $custom-100;
 }
+
+
 header.masthead {
   //color: white;
   //text-shadow: black 0px 0px 5px;
@@ -326,4 +328,68 @@ main {
   border-bottom-color: $primary-accent;
   border-bottom-style: solid;
   border-bottom-width: 3px;
+}
+
+
+
+// post styling 23 Sept 2020 MPK -- adapted from iris-hep
+.post {
+  .iris-post-footer {
+    clear: both;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    @media only screen and (min-width: 768px), only print {
+      margin-top: 40px;
+    }
+  }
+
+  img.banner {
+    width: 100%;
+    padding-bottom: 20px;
+  }
+
+  figure a img {
+    width: 100%;
+  }
+
+  figure.right {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    @media only screen and (min-width: 991px), only print {
+      float: right;
+      width: 50%;
+      margin-left: 20px;
+    }
+  }
+
+  figure.center {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    @media only screen and (min-width: 991px), only print {
+      width: 70%;
+    }
+  }
+
+  figure.caption {
+    @media only screen and (min-width: 991px), only print {
+      padding: 6px;
+      background-color: scale-color($custom-100, $lightness:60%);
+      @media (prefers-color-scheme: dark) {
+        background-color: $custom-100
+      }
+      border-radius: 6px;
+    }
+
+    a img {
+      @media only screen and (min-width: 991px), only print {
+        border-radius: 6px 6px 0px 0px;
+      }
+      margin-bottom: 6px;
+    }
+  }
+  a img {
+    width: 100%;
+  }
 }
