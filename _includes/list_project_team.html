@@ -1,4 +1,4 @@
-<h3>Team</h3>
+<h3>Collaborators Include:</h3>
 
 <div class="container pt-1 pb-3">
   <div class="row">
@@ -16,6 +16,8 @@
     <li> {{ member }} </li>
   {%- endunless -%}
 {%- endfor -%}
-
   </div>
+{% if page.largeteam and page.largeteam != blank %}
+See the project website for a full listing of the collaborators on this project.
+{% endif %}
 </div>

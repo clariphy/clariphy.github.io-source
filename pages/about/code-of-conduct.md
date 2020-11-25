@@ -3,13 +3,10 @@ permalink: /about/code-of-conduct
 layout: default
 title: Code of Conduct
 ---
-# IRIS-HEP Code Of Conduct
-IRIS-HEP is a software institute funded by the National Science Foundation. It
-serves as a center for software R&D, functions as an intellectual hub for the
-larger community-wide software R&D efforts, and transforms the operational
-services required to ensure the success of the HL-LHC scientific program. Its
-success depends on its ability to engage a community from several institutions
-and disciplines with diverse skills, personalities and experiences.
+# CLARIPHY Code Of Conduct
+CLARIPHY is a collaboration of academic and national laboratory researchers
+interested in AI research, particle physics research and the synergies
+between the two fields..
 
 Naturally, this implies diversity of ideas and perspectives on often complex
 problems. Disagreement and healthy discussion of conflicting viewpoints is
@@ -31,15 +28,13 @@ things. However, sometimes these informal processes may be inadequate: they fail
 to work, there is urgency or risk to someone, nobody is intervening publicly and
 you don't feel comfortable speaking in public, etc. For these or other reasons,
 structured follow-up may be necessary and here we provide the means for that: we
-welcome reports by contacting [any member of the IRIS-HEP Executive Board](https://iris-hep.org/about/executive-board). This code of conduct applies equally to all
+welcome reports by contacting [COMING SOON]. This code of conduct applies equally to all
 community members in all Institute situations online and offline, including
 conferences, training events, mailing lists, forums, GitHub organizations, chat rooms, social
 media, social events associated with conferences and events, and one-to-one interactions.
 
 By embracing the following principles, guidelines and actions to follow or
-avoid, you will help us make IRIS-HEP a welcoming and productive community. Feel
-free to contact 
-[any member of the IRIS-HEP Executive Board](https://iris-hep.org/about/executive-board).
+avoid, you will help us make CLARIPHY a welcoming and productive community. 
 
 1. **Be friendly and patient**.
 
@@ -79,7 +74,7 @@ behavior are not acceptable. This includes, but is not limited to:
 * Repeated harassment of others. In general, if someone asks you to stop, then stop.
 
 6. **When we disagree, try to understand why**. Disagreements, both social
-and technical, happen all the time and the IRIS-HEP community is no exception.
+and technical, happen all the time and the CLARIPHY community is no exception.
 Try to understand where others are coming from, as seeing a question from their
 viewpoint may help find a new path forward. And don’t forget that it is human to
 err: blaming each other doesn’t get us anywhere, while we can learn from
@@ -94,8 +89,7 @@ If you believe someone is violating the code of conduct, please report this in a
 timely manner. Code of conduct violations reduce the value of the community for
 everyone and we take them seriously.
 
-You can file a report by emailing
-[any member of the IRIS-HEP Executive Board](https://iris-hep.org/about/executive-board).
+You can file a report by emailing [COMING SOON].
 
 This code was adapted from the Project JupyterHub code of conduct and
 is licenced

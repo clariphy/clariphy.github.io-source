@@ -1,8 +1,8 @@
 ---
 permalink: /index.html
 layout: main
-title: Community Laboratory for AI Research at the Intersection with Physics (CLARIPHY)
-bgimage: assets/images/chess-clariphy.jpg
+
+bgimage: assets/images/style-1/CLARIPHY.png
 ---
 
 <div class="mainpage-all">
@@ -12,10 +12,10 @@ bgimage: assets/images/chess-clariphy.jpg
 <h4>Artificial Intelligence research to enable discoveries in particle physics</h4>
 
 {% capture irishead %}
-The Community Laboratory for AI Research at the Intersection with Physics (CLARIPHY) is a multidisciplinary collaborative effort between the particle physics and artificial intelligence research communities. It aims to understand how AI can radically extend the discovery potential of large particle physics experiments while simultaneously providing a unique environment for driving AI research in new directions.  [Full Overview](/about/overview.html)
-
+<!--The Community Laboratory for AI Research at the Intersection with Physics (CLARIPHY) is a multidisciplinary collaborative effort between the particle physics and artificial intelligence research communities. It aims to understand how AI can radically extend the discovery potential of large particle physics experiments while simultaneously providing a unique environment for driving AI research in new directions.  [Full Overview](/about/overview.html)
+-->
 <!--
-required for the challenges of data intensive scientific research at the High Luminosity Large Hadron Collider (HL-LHC) at CERN, and other planned HEP experiments of the 2020's. These facilities are discovery machines which aim to understand the fundamental building blocks of nature and their interactions. 
+required for the challenges of data intensive scientific research at the High Luminosity Large Hadron Collider (HL-LHC) at CERN, and other planned HEP experiments of the 2020's. These facilities are discovery machines which aim to understand the fundamental building blocks of nature and their interactions.
 -->
 {% endcapture %}
 {{ irishead | markdownify }}
@@ -42,7 +42,7 @@ required for the challenges of data intensive scientific research at the High Lu
                   {{ post.summary | markdownify }}
               {% else %}
                   {{ post.excerpt | strip_html }}
-              {% endif %}  
+              {% endif %}
             <a href="{{post.url}}">Read more</a></div>
           </div>
        </div>
@@ -57,7 +57,7 @@ required for the challenges of data intensive scientific research at the High Lu
 <div class="mainpage-events mainpage-core">
 
 {% comment %}
-Go through the list and produce a list of upcoming events as well as a 
+Go through the list and produce a list of upcoming events as well as a
 list of events in the past 90 days. Treat 6 days ago as "now" so that
 ongoing events don't get prematurely flagged as recent.
 {% endcomment %}
@@ -76,7 +76,7 @@ ongoing events don't get prematurely flagged as recent.
 {% for event_hash in site.data.events %}
   {% assign event = event_hash[1] %}
   {% assign startdatecmp = event.startdate | date: "%s" %}
-  {% if startdatecmp >= sixdaysago %} 
+  {% if startdatecmp >= sixdaysago %}
      {% assign selected_events = selected_events | push: event %}
   {% endif %}
 {% endfor %}

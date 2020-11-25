@@ -4,7 +4,7 @@ Is this badge red? Click on it to find whats wrong with the repository...
 
 # clariphy.org Website Source
 
-GitHub pages for IRIS-HEP website.
+GitHub pages for CLARIPHY website.
 
 Do not make a PR to the output repository directly! Instead, make pull requests to the [clariphy.github.io-source repository](https://github.com/clariphy/clariphy.github.io-source/). The advantage of making a pull request instead of directly editing is that changes made via pull request will be tested to ensure that all is ok with your changes...
 

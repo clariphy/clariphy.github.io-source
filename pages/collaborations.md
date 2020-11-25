@@ -6,10 +6,10 @@ title: Collaborations and Related Projects
 
 # Collaborations and Related Projects
 
-The IRIS-HEP project and team members are part of a larger ecosystem of 
-projects and collaborations focused on both high energy physics research and 
-the development of software and computing systems to support science. These 
-include:
+The CLARIPHY project and team members are part of a larger ecosystem of 
+projects and collaborations focused on research on particle physics, data
+science, artificial intelligence and cyberinfrastructure to support
+science. These include:
 
 {% for collab in site.data.collabcats %}
 #### {{ collab.name }}
