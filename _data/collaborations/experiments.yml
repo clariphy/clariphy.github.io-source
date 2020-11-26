@@ -1,3 +1,9 @@
+- name: Deep Underground Neutrino Experiment
+  short: DUNE
+  url: https://www.dunescience.org
+  description: >-
+    The Deep Underground Neutrino Experiment (DUNE) is a leading-edge, international experiment for neutrino science and proton decay studies.
+
 - name: The ATLAS experiment
   short: ATLAS
   url: https://home.cern/science/experiments/atlas
