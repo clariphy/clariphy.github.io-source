@@ -12,6 +12,7 @@ science, artificial intelligence and cyberinfrastructure to support
 science. These include:
 
 {% for collab in site.data.collabcats %}
+<br>
 #### {{ collab.name }}
 {%    for proj in site.data.collaborations[collab.id] %}
 * [{{ proj.name }}]({{ proj.url }})
