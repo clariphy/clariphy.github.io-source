@@ -1,8 +1,7 @@
 
-- name: Scikit-HEP
-  short: Scikit-HEP
-  url: http://scikit-hep.org
-  
+- name: IAIFI AI Institute
+  url: https://iaifi.org
+
 - name: PyHEP
   url: https://hepsoftwarefoundation.org/workinggroups/pyhep.html
   

@@ -1,4 +1,4 @@
-- name: U.S. ATLAS Collaboration
+- name: US-ATLAS Collaboration
   short: USATLAS
   url: https://po.usatlas.bnl.gov/
   description: >- 
@@ -8,7 +8,7 @@
     NSF and DOE grants.
 
 
-- name: U.S. ATLAS Operations Program
+- name: US-ATLAS Operations Program
   url: https://po.usatlas.bnl.gov/programoffice/op.php
   description: >- 
     This is a joint NSF/DOE project to support operations and
@@ -18,7 +18,7 @@
     - type: PHY
       number: 1624739
 
-- name: U.S. CMS Collaboration 
+- name: US-CMS Collaboration 
   short: USCMS
   url: https://uscms.org/index.shtml 
   description: >- 
@@ -27,7 +27,7 @@
     comes from a variety of single PI and group NSF and DOE
     grants.
 
-- name: U.S. CMS Operations Program
+- name: US-CMS Operations Program
   url: https://uscms.org/uscms_at_work/rpo/index.shtml
   description: >-
     This is a joint NSF/DOE project to support operations and computing facilities
