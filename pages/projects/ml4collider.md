@@ -1,5 +1,5 @@
 ---
-permalink: /projects/ml4particle.html
+permalink: /projects/ml4collider.html
 layout: project
 title: ML4Collider
 shortname: ml4collider
