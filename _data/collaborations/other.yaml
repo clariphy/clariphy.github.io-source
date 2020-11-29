@@ -5,6 +5,9 @@
 - name: IAIFI AI Institute
   url: https://iaifi.org
 
+- name: CERN IML
+  url: https://iml.web.cern.ch
+
 - name: PyHEP
   url: https://hepsoftwarefoundation.org/workinggroups/pyhep.html
   
