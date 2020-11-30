@@ -11,11 +11,13 @@ The Community Laboratory for AI Research at the Intersection with Physics (CLARI
 <h1>Particle Physics and Artificial Intelligence</h1>
 
 Human beings have established that the subnuclear building blocks of all known matter are quarks and leptons whose interactions are governed by a self-consistent quantum field theory known as the Standard Model of particle physics. Its key theoretical ideas date back more than 50 years, but experimental verification has come only after sustained effort. From the mid-1980’s through the discovery of the Higgs Boson in 2012, a series of diverse and progressively more sophisticated particle detectors and accelerators, deployed worldwide, have searched for, discovered and measured the last elements of the Standard Model.
+
 <!--
 A key point to note is that these were engineered discoveries. Guided by the developing Standard Model, we knew roughly the kind of things that we were looking for, even if we did not know exactly where and how it would appear. The physics community prepared for each new experimental facility with detailed strategies for the searches with titles such as “The Higgs Hunter’s Guide” and “The BaBar Physics Book”.
 
 Despite its success, the Standard Model is known to be an incomplete description of nature. Many big mysteries still exist: What is dark matter? What is the physics behind neutrino mass? Where does the spin of the proton originate? What is the origin of the matter-antimatter asymmetry in the universe? Answering these questions likely requires “Beyond the Standard Model (BSM)” physics. Unlike the past decades, we do not have pre-engineered models from which to start. Even the most theoretically popular models for BSM physics discovery (e.g. Supersymmetry in various incarnations) have not led to discoveries to date.
 -->
+
 A key question is how particle physics research can be open to the widest possible set of potential discoveries, and understand how to interpret them once seen.
 AI and Machine Learning offer exactly this potential: if we are
 successful with CLARIPHY, we can significantly expand the discovery
