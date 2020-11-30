@@ -15,9 +15,9 @@ awards:
     number: LDRD-19-13
 ---
 
-<div id="alpha-head">
-<img src="/assets/images/posts/20201120-ALPhA-horizontal.png" alt="ALPhA logo" width="800px" align="center"/>
-</div>
+
+<img src="/assets/images/posts/20201120-ALPhA-horizontal.png" alt="ALPhA logo" width="800px" class="alpha-head"/>
+
 
 This project, *Machine Learning Approaches for Accelerating Scientific Discovery in Nuclear Physics*, enables collaboration between theoretical and experimental nuclear physicists and computer scientists to aid in scientific discoveries using state-of-the-art machine learning methods at the Facility for Rare Isotope Beams, the Compact Muon Solenoid experiment at CERN, Thomas Jefferson National Accelerator Facility, and the upcoming Electron Ion Collider. This NSF-funded project is an integral part of the ALPhA group (Algorithms for Learning in Physics Applications), an ongoing research collaboration headed by Professors Michelle Kuchera and Raghu Ramanujan at Davidson College.
 
