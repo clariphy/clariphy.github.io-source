@@ -8,12 +8,13 @@ title: CLARIPHY Topical Meetings
 </center>
 
 <br>
-CLARIPHY topical meetings cover one or more presentations involving
-CLARIPHY researchers or from related research areas. They are
-typically held Mondays 17:30 GVA and Wednesdays 18:00 GVA. Vidyo
-connections are always available and meetings are usually recorded.
+CLARIPHY topical meetings allow researchers in related areas to present
+their work at all stages (early, in progress, post-publication) of their
+efforts. We have a special focus on areas at the intersection of Physics
+and Data Science, Machine Learning and Artificial Intelligence.
+Zoom connections are always available and meetings are usually recorded.
 Find all topical meeting agendas
-[here](https://indico.cern.ch/category/10570/).
+[here](https://indico.fnal.gov/category/1253/).
 <ul>
 
 {% comment %}
