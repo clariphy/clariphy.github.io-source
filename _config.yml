@@ -55,5 +55,10 @@ exclude:
   - .github
 
 sass:
-    sass_dir: _sass
-    style: compact # possible values: nested expanded compact compressed
+  sass_dir: _sass
+  style: compact # possible values: nested expanded compact compressed
+
+indico:
+  url: https://indico.fnal.gov
+  ids:
+    topical: 1253
