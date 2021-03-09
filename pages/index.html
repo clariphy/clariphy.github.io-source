@@ -64,6 +64,7 @@ ongoing events don't get prematurely flagged as recent.
 {% assign currentdatecmp = 'now' | date: "%s" %}
 {% assign onedayago = 'now' | date: "%s" | minus: 86400 | date: "%b %d, %Y %I:%M %p -0500" | uri_encode | replace: "+","%20" | date: "%s"%}
 {% assign sixdaysago = 'now' | date: "%s" | minus: 518400 | date: "%b %d, %Y %I:%M %p -0500" | uri_encode | replace: "+","%20" | date: "%s"%}
+{% assign sixweeksago = 'now' | date: "%s" | minus: 3628800 | date: "%b %d, %Y %I:%M %p -0500" | uri_encode | replace: "+","%20" | date: "%s"%}
 {% assign ninetydaysago = 'now' | date: "%s" | minus: 7776000| date: "%b %d, %Y %I:%M %p -0500" | uri_encode | replace: "+","%20" | date: "%s"%}
 
 {% assign selected_events = "" | split: ',' %}
@@ -111,13 +112,13 @@ ongoing events don't get prematurely flagged as recent.
 <div class="mainpage-topical mainpage-core">
 
 <div class="mainpage-sidebar-text">
-<h4>Upcoming Topical Meetings:</h4>
+<h4>Upcoming/Recent Topical Meetings:</h4>
 </div>
 {% include get_indico_list.html %}
 <ul>
 {% for event in selected_array %}
   {% assign startdatecmp = event.startdate | date: "%s" %}
-  {% if onedayago <= startdatecmp %}
+  {% if sixweeksago <= startdatecmp %}
     <li>
       <a href="{{event.meetingurl}}">
         <div class="event">
