@@ -60,5 +60,6 @@ sass:
 
 indico:
   url: https://indico.fnal.gov
+  cache-command: bundle exec rake cache
   ids:
     topical: 1253
