@@ -33,7 +33,7 @@ gem 'minima', '~> 2.5.1'
 # If you have any plugins, put them here!
 group :jekyll_plugins do
   gem 'jekyll-feed', '~> 0.6'
-  gem 'jekyll-indico', '~> 0.2.0'
+  gem 'jekyll-indico', '~> 0.3.0'
   # gem 'jekyll-indico', github: 'iris-hep/jekyll-indico', branch: 'main'
 end
 
