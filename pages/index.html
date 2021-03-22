@@ -110,7 +110,6 @@ ongoing events don't get prematurely flagged as recent.
 </div>
 
 <div class="mainpage-topical mainpage-core">
-
 <div class="mainpage-sidebar-text">
 <h4>Upcoming/Recent Topical Meetings:</h4>
 </div>
@@ -143,6 +142,34 @@ ongoing events don't get prematurely flagged as recent.
 </div>
 </div>
 
+<div class="mainpage-pubs mainpage-core">
+<div class="mainpage-sidebar-text">
+<h4>Recent Publications:</h4>
+</div>
+{% include get_pub_list.html %}
+<ul>
+{% for pub in sorted_publications limit:8 %}
+  <li>
+    <a href="{{pub.link}}">
+      <div class="pub">
+        <div class="title">
+          {{ pub.title }}
+        </div>
+        <div class="year">
+          ({{ pub.date | date: "%Y"}})
+        </div>
+        <div class="citation">
+          {{ pub.citation }}
+        </div>
+      </div>
+    </a>
+  </li>
+{% endfor %}
+</ul>
+<div class="mainpage-sidebar-links">
+<a href="/publications/all.html" aria-label="View all publications">View all</a>
+</div>
+</div>
 
 <div class="mainpage-related mainpage-core">
 <div class="mainpage-sidebar-text">
