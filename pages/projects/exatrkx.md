@@ -20,4 +20,7 @@ In the near future, the High Luminosity Large Hadron Collider (HL-LHC) at CERN a
 
 Exa.TrkX, a DOE CompHEP project composed of physicists from the ATLAS, CMS, and DUNE experiments, is developing a collection of Graph Neural Network (GNN) models designed to improve particle reconstruction at next generation experiments with the speed necessary to cope with unprecedented data rates.  Rather than reconstruct trajectories sequentially, as is done traditionally, GNNs operate on graphs constructed from an event where the nodes represent measurements in a detector system and edges represent potential trajectories particles followed. After a series of message passing iterations, edges not corresponding to true trajectories are reduced in weight. To support the development of reconstruction techniques, Exa.TrkX is also pursuing distributed training of GNNs and their deployment on FPGA-based real-time processing systems.
 
+In addition to these edge-classifier GNNs, Exa..TrkX is also studying novel GNN architectures to further improve tracking. This includes instance segmentation models, graph kernel methods, and conformal-space GNNs for one-shot tracking. 
+
+
 
