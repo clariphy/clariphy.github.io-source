@@ -8,6 +8,8 @@ title: Overview
 
 The Community Laboratory for AI Research at the Intersection with Physics (CLARIPHY) is a multidisciplinary collaborative effort between the broad particle physics community and the artificial intelligence, machine learning and data science research communities. It aims to understand how cutting-edge data science can radically extend the discovery potential of large data-intensive particle physics experiments while simultaneously providing a unique environment for driving AI/ML and data science research in new directions. Our collaboration pursues research activities which advance the required foundational research in this area as well as building the pathways for transformative applications in physics.
 
+TO UPDATE
+
 <h1>Particle Physics and Artificial Intelligence</h1>
 
 Human beings have established that the subnuclear building blocks of all known matter are quarks and leptons whose interactions are governed by a self-consistent quantum field theory known as the Standard Model of particle physics. Its key theoretical ideas date back more than 50 years, but experimental verification has come only after sustained effort. From the mid-1980’s through the discovery of the Higgs Boson in 2012, a series of diverse and progressively more sophisticated particle detectors and accelerators, deployed worldwide, have searched for, discovered and measured the last elements of the Standard Model.

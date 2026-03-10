@@ -182,7 +182,7 @@ module Publications
     def load_from_cache(pub, fname)
       return false unless fname.exist?
 
-      f = YAML.load_file fname
+      f = YAML.load_file fname, permitted_classes: [Date]
       pub.map do |key, value|
         oldvalue = f[key]
         return false unless oldvalue == value

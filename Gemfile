@@ -49,7 +49,14 @@ gem 'wdm', '~> 0.1.0' if Gem.win_platform?
 # Pinning this for now since macOS + default Ruby needs this
 # Please use rbenv to pick Ruby versions; the next Jekyll release
 # will not work with macOS's Ruby 2.3
-gem 'ffi', '= 1.10.0'
+gem 'ffi', '~> 1.17'
+
+# Gems removed from Ruby default stdlib in Ruby 3.4+
+gem 'csv'
+gem 'base64'
+gem 'bigdecimal'
+gem 'mutex_m'
+gem 'webrick'
 
 gem "jekyll-environment-variables"
 gem "kramdown-parser-gfm"
