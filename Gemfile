@@ -57,6 +57,5 @@ gem 'bigdecimal'
 gem 'mutex_m'
 gem 'webrick'
 
-gem "jekyll-environment-variables"
 gem "kramdown-parser-gfm"
 

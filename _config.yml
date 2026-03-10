@@ -28,6 +28,7 @@ footer:
   copyright_text: 'CLARIPHY is an informal collaboration of researchers from a number of universities and national laboratories. Any opinions, findings, conclusions or recommendations expressed in this material are those of the authors and do not necessarily reflect the views of their institutions or any entities funding their work.'
 
 # Build settings
+strict_front_matter: true
 markdown: kramdown
 theme: minima
 plugins:
