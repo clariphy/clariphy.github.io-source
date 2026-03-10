@@ -15,6 +15,7 @@ presentations:
     meetingurl: https://indico.cern.ch/event/822126/
     location: FNAL
     project: arris
+    focus-area:
   - title: "Accelerating Deep Neural Networks For Real-time Data Selection For High-resolution Imaging Particle Detectors"
     date: 2019-06-13
     url: https://www.bnl.gov/nysds19/files/talks/Session4/Georgia-Karagiorgi_NYSDS19.pdf
@@ -22,3 +23,4 @@ presentations:
     meetingurl: https://www.bnl.gov/nysds19/
     location: Columbia University
     project: arris
+    focus-area:
