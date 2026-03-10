@@ -10,7 +10,7 @@ source 'https://rubygems.org'
 #
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
-gem 'jekyll', '~> 3.9.0'
+gem 'jekyll', '~> 4.3'
 
 group :development do
   # Check resulting HTML for dead links and other issues
@@ -32,7 +32,7 @@ gem 'minima', '~> 2.5.1'
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
-  gem 'jekyll-feed', '~> 0.6'
+  gem 'jekyll-feed', '~> 0.17'
   # jekyll-indico disabled: indico.fnal.gov event 1253 now returns 403.
   # Event data is already cached as static YAML in _data/events/.
   # gem 'jekyll-indico', '~> 0.3.0'
@@ -47,9 +47,6 @@ gem 'pkg-config', '~> 1.1'
 # Performance-booster for watching directories on Windows
 gem 'wdm', '~> 0.1.0' if Gem.win_platform?
 
-# Pinning this for now since macOS + default Ruby needs this
-# Please use rbenv to pick Ruby versions; the next Jekyll release
-# will not work with macOS's Ruby 2.3
 gem 'ffi', '~> 1.17'
 
 # Gems removed from Ruby default stdlib in Ruby 3.4+
