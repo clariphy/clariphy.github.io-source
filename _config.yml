@@ -19,7 +19,7 @@ email: Peter.Elmer@cern.ch
 description: >- # this means to ignore newlines until "baseurl:"
   Community Laboratory for AI Research at the Intersection with Physics (CLARIPHY)
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://clariphy.org" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://clariphy.org" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: clariphy
 github_username: clariphy 
 excerpt_separator: <!--more-->
@@ -59,9 +59,3 @@ sass:
   silence_deprecations:
     - import
 
-indico:
-  url: https://indico.fnal.gov
-  cache-command: bundle exec rake cache
-  # Event 1253 now returns 403; live fetching disabled. Existing data is in _data/events/
-  # ids:
-  #   topical: 1253

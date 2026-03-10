@@ -1,14 +1,12 @@
 # coding: utf-8
 
 require 'rake/clean'
-
-
 # If no task given, build
 task :default => :build
 
 # Support clean and clobber tasks
 CLEAN << '_site'
-CLOBBER << '_cache' << '.sass-cache' << '_data/indico'
+CLOBBER << '_cache' << '.sass-cache'
 
 desc 'Preview on a local machine'
 task :serve do
@@ -20,18 +18,10 @@ desc 'Build on a local machine'
 task :build do
   jekyll 'build', :verbose, :trace
 end
-
-desc 'Cache the indico access'
-task :cache do
-  sh 'jekyll-indico-cache'
-end
-
 desc 'Run rubocop to lint the ruby code'
 task :rubocop do
   sh 'rubocop', '_plugins', '_scripts'
 end
-
-
 # See https://github.com/gjtorikian/html-proofer#configuration
 COMMON_OPTIONS = {
   assume_extension: true,
@@ -46,8 +36,6 @@ LIGHT_OPTIONS = {
     'https://indico.lal.in2p3.fr/event/4754/#sc-19-8-machine-learning-to-pr', # Fix
     %r{https://www.ci.uchicago.edu/profile/.*}]
 }
-
-
 desc 'Check already built site'
 task :checkonly do
   html_proofer COMMON_OPTIONS, LIGHT_OPTIONS
@@ -60,8 +48,6 @@ desc 'Stronger check for missing options - will show up as warnings on Travis'
 task :checkall => :build do
   html_proofer COMMON_OPTIONS
 end
-
-
 
 ### Support functions ###
 
