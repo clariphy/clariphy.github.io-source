@@ -1,17 +1,48 @@
 <script>
-    $("p").each(function() {
-        if($(this).html()=='[expand]') {
-            $(this).addClass('expand_start');
-        }
-        if($(this).html()=='[/expand]') {
-            $(this).addClass('expand_end');
-        }
-    });
-    $( "p.expand_start" ).each(function() {
-        $(this).nextUntil( $("p.expand_end") ).wrapAll("<div class='expand' style='overflow: hidden;'></div>");
-        $(this).prev().append('<span>..&nbsp; <a href="#" style="cursor: pointer;" onclick="$(this).parent().parent().next().slideToggle(); $(this).parent().hide(); return false;">see&nbsp;more&nbsp;&rarr;</a></span>');
-        $(this).remove()
-    });
-    $( ".expand").hide();
-    $( "p.expand_end" ).hide();
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('p').forEach(function(p) {
+    if (p.innerHTML.trim() === '[expand]') p.classList.add('expand_start');
+    if (p.innerHTML.trim() === '[/expand]') p.classList.add('expand_end');
+  });
+
+  document.querySelectorAll('p.expand_start').forEach(function(start) {
+    var prev = start.previousElementSibling;
+
+    // Collect siblings between start and end markers
+    var siblings = [];
+    var el = start.nextSibling;
+    while (el) {
+      if (el.nodeType === 1 && el.classList.contains('expand_end')) break;
+      siblings.push(el);
+      el = el.nextSibling;
+    }
+    var endEl = (el && el.nodeType === 1 && el.classList.contains('expand_end')) ? el : null;
+
+    // Create wrapper div and insert after start, then move siblings into it
+    var wrap = document.createElement('div');
+    wrap.className = 'expand';
+    wrap.style.cssText = 'overflow: hidden; display: none;';
+    start.insertAdjacentElement('afterend', wrap);
+    siblings.forEach(function(s) { wrap.appendChild(s); });
+
+    // Append see-more link to the element preceding the start marker
+    if (prev) {
+      var span = document.createElement('span');
+      var link = document.createElement('a');
+      link.href = '#';
+      link.style.cursor = 'pointer';
+      link.innerHTML = '..&nbsp; see&nbsp;more&nbsp;&rarr;';
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        wrap.style.display = 'block';
+        span.style.display = 'none';
+      });
+      span.appendChild(link);
+      prev.appendChild(span);
+    }
+
+    if (endEl) endEl.style.display = 'none';
+    start.remove();
+  });
+});
 </script>

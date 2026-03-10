@@ -14,7 +14,7 @@ bodyClass: page-services-list
         <figure class="figure">
           <img alt={{ page.title }} class="figure-img img-fluid rounded {% if page.intro_image_hide_on_mobile %} intro-image-hide-mobile{% endif %}" src="{{ page.intro_image | relative_url }}" />
           {% if page.intro_image_caption %}
-            <figcaption class="figure-caption text-right"> {{ page.intro_image_caption | markdownify }} </figcaption>
+            <figcaption class="figure-caption text-end"> {{ page.intro_image_caption | markdownify }} </figcaption>
           {% endif %}
         </figure>
       </div>

@@ -92,11 +92,9 @@ $footer-text-color: $white;
 $sub-footer-background-color: $secondary;
 $sub-footer-text-color: $black;
 
-// Bootstrap
+// Bootstrap 5
 @import 'bootstrap-variables';
-@import 'bootstrap/bootstrap-reboot';
-@import 'bootstrap/bootstrap-grid';
-@import 'bootstrap/bootstrap'; // Uncomment this line to import the entire Bootstrap library
+@import 'bootstrap';
 
 
 // Libraries
