@@ -33,8 +33,9 @@ gem 'minima', '~> 2.5.1'
 # If you have any plugins, put them here!
 group :jekyll_plugins do
   gem 'jekyll-feed', '~> 0.6'
-  gem 'jekyll-indico', '~> 0.3.0'
-  # gem 'jekyll-indico', github: 'iris-hep/jekyll-indico', branch: 'main'
+  # jekyll-indico disabled: indico.fnal.gov event 1253 now returns 403.
+  # Event data is already cached as static YAML in _data/events/.
+  # gem 'jekyll-indico', '~> 0.3.0'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

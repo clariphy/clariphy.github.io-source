@@ -61,5 +61,6 @@ sass:
 indico:
   url: https://indico.fnal.gov
   cache-command: bundle exec rake cache
-  ids:
-    topical: 1253
+  # Event 1253 now returns 403; live fetching disabled. Existing data is in _data/events/
+  # ids:
+  #   topical: 1253
