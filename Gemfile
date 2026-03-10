@@ -23,8 +23,6 @@ group :development do
   gem 'rubocop', require: false
 end
 
-# This is the default theme for new Jekyll sites. You may change this to anything you like.
-gem 'minima', '~> 2.5.1'
 gem 'bootstrap', '~> 5.3'
 
 # If you want to use GitHub Pages, remove the 'gem 'jekyll'' above and
@@ -34,6 +32,7 @@ gem 'bootstrap', '~> 5.3'
 # If you have any plugins, put them here!
 group :jekyll_plugins do
   gem 'jekyll-feed', '~> 0.17'
+  gem 'jekyll-seo-tag'
   # jekyll-indico disabled: indico.fnal.gov event 1253 now returns 403.
   # Event data is already cached as static YAML in _data/events/.
   # gem 'jekyll-indico', '~> 0.3.0'

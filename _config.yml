@@ -30,9 +30,9 @@ footer:
 # Build settings
 strict_front_matter: true
 markdown: kramdown
-theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
 #  - jekyll-environment-variables
 # seems to cause problems currently (March 2019)
 #  - jekyll-redirect-from
@@ -58,6 +58,9 @@ exclude:
 sass:
   sass_dir: _sass
   style: compressed # possible values: nested expanded compact compressed
+  quiet_deps: true
+  silence_deprecations:
+    - import
 
 indico:
   url: https://indico.fnal.gov

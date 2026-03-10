@@ -2,6 +2,8 @@
 # this ensures Jekyll reads the file to be transformed into CSS later
 ---
 
+@use 'sass:color';
+
 // -----------------------------------------------------------------------
 // Custom color schems
 // -----------------------------------------------------------------------
@@ -79,7 +81,7 @@ $dark: $primary;
 // Links
 $link-color: $primary;
 $link-decoration: none;
-$link-hover-color: lighten($primary, 10%);
+$link-hover-color: color.adjust($primary, $lightness: 10%);
 $link-hover-decoration: underline;
 
 // Fonts
@@ -194,7 +196,7 @@ header.masthead {
 %light-purple-header {
     color: $secondary;
     @media (prefers-color-scheme: dark) {
-      color: scale-color($success, $lightness:40%)
+      color: color.scale($success, $lightness:40%)
     }
 }
 
@@ -411,7 +413,7 @@ main {
   figure.caption {
     @media only screen and (min-width: 991px), only print {
       padding: 6px;
-      background-color: scale-color($custom-100, $lightness:60%);
+      background-color: color.scale($custom-100, $lightness:60%);
       @media (prefers-color-scheme: dark) {
         background-color: $custom-100
       }
