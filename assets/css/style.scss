@@ -4,9 +4,13 @@
 
 @use 'sass:color';
 
+// Brand accent colors — change these two to retheme the site
+$brand-blue:   rgb(28, 46, 78);    // navbar, footer, card headers
+$brand-yellow: rgb(255, 232, 120); // banner text, navbar border, card bodies, sub-footer
+
 // MK Color Scheme
 $custom-100: #1E3040 !default;  // steel blue
-$custom-200: rgb(28, 46, 78) !default;  // dark blue
+$custom-200: $brand-blue !default;  // dark blue
 $custom-300: #6A7349 !default;  // dark pea green
 $custom-400: #B4BF5E !default;  // pea green
 $custom-500: #D5D962 !default;  // light pea green
@@ -14,7 +18,7 @@ $custom-600: #402E1E !default;  // #1E3040 complement
 
 // Colors that are used below
 $primary: $custom-100;
-$primary-accent: rgb(255, 232, 120);
+$primary-accent: $brand-yellow;
 $secondary: $custom-500;
 $secondary-accent: $custom-200;
 $tertiary: $custom-300;
@@ -43,9 +47,9 @@ $font-family-base: Helvetica, Arial, sans-serif, -apple-system;
 $font-family-heading: 'Playfair Display', serif, -apple-system;
 
 // Footer
-$footer-background-color: rgb(28, 46, 78);
+$footer-background-color: $brand-blue;
 $footer-text-color: $white;
-$sub-footer-background-color: rgb(255, 232, 120);
+$sub-footer-background-color: $brand-yellow;
 $sub-footer-text-color: $black;
 
 // Bootstrap 5
@@ -135,7 +139,7 @@ header.masthead {
   }
 
   .banner-title {
-    color: rgb(255, 232, 120);
+    color: $brand-yellow;
     font-family: 'Montserrat', sans-serif;
     font-size: 3rem;
     font-weight: 700;
@@ -149,7 +153,7 @@ header.masthead {
   }
 
   .banner-subtitle {
-    color: rgb(255, 232, 120);
+    color: $brand-yellow;
     font-family: 'Merriweather', serif;
     font-size: 1rem;
     font-weight: 400;
@@ -253,7 +257,7 @@ main {
     flex-flow: row wrap;
     margin: 5px 0 10px 0;
     //old background-color: scale-color($secondary, $lightness:60%);
-    background-color: rgb(255, 232, 120);
+    background-color: $brand-yellow;
     border-radius: 6px;
 
     .date, .location {
@@ -302,7 +306,7 @@ main {
     flex-flow: row wrap;
     margin: 5px 0 10px 0;
     //old background-color: scale-color($secondary, $lightness:60%);
-    background-color: rgb(255, 232, 120);
+    background-color: $brand-yellow;
     border-radius: 6px;
 
     .year, .title {
@@ -349,13 +353,13 @@ main {
 
 // White links against a dark background
 .navbar-dark {
-  background-color: rgb(28, 46, 78) !important;
+  background-color: $brand-blue !important;
   border-bottom-color: $primary-accent;
   border-bottom-style: solid;
   border-bottom-width: 3px;
 
   .dropdown-menu {
-    background-color: rgb(28, 46, 78);
+    background-color: $brand-blue;
     border-color: rgba(255, 255, 255, 0.15);
   }
 
