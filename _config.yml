@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Community Laboratory for AI Research at the Intersection with Physics (CLARIPHY)
+title: Community Laboratory for AI-native Research and Innovation in Physics (CLARIPHY)
 shorttitle: CLARIPHY
 email: Peter.Elmer@cern.ch
 description: >- # this means to ignore newlines until "baseurl:"
