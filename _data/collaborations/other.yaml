@@ -1,9 +1,9 @@
 
-- name: Snowmass 2021 - CompF3 Machine Learning
-  url: https://snowmass21.org/computational/machine_learning
-
 - name: IAIFI AI Institute
   url: https://iaifi.org
+
+- name: A3D3 Institute
+  url: https://a3d3.ai
 
 - name: CERN IML
   url: https://iml.web.cern.ch
