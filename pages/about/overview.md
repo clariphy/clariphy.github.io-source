@@ -22,7 +22,7 @@ data annually, while discarding a majority of the raw information
 due to bandwidth, storage, or latency constraints. The scale,
 complexity, and structure of these datasets align with the strengths
 of modern Artificial Intelligence (AI): high-dimensional pattern
-recognition, rare-signal inference, low- latency decision making,
+recognition, rare-signal inference, low-latency decision making,
 and the orchestration of complex systems spanning hardware, software,
 and human expertise. AI can play a transformative role by enabling
 experiments to extract and retain more information from data,
