@@ -4,33 +4,83 @@ layout: default
 title: Overview
 ---
 
+<!--
 <h1>Our Mission</h1>
 
 The Community Laboratory for AI Research at the Intersection with Physics (CLARIPHY) is a multidisciplinary collaborative effort between the broad particle physics community and the artificial intelligence, machine learning and data science research communities. It aims to understand how cutting-edge data science can radically extend the discovery potential of large data-intensive particle physics experiments while simultaneously providing a unique environment for driving AI/ML and data science research in new directions. Our collaboration pursues research activities which advance the required foundational research in this area as well as building the pathways for transformative applications in physics.
-
-TO UPDATE
+-->
 
 <h1>Particle Physics and Artificial Intelligence</h1>
 
-Human beings have established that the subnuclear building blocks of all known matter are quarks and leptons whose interactions are governed by a self-consistent quantum field theory known as the Standard Model of particle physics. Its key theoretical ideas date back more than 50 years, but experimental verification has come only after sustained effort. From the mid-1980’s through the discovery of the Higgs Boson in 2012, a series of diverse and progressively more sophisticated particle detectors and accelerators, deployed worldwide, have searched for, discovered and measured the last elements of the Standard Model.
+Experimental particle physics addresses some of the most fundamental
+questions about the universe through facilities that are among the
+largest, most complex, and ambitious scientific endeavors ever
+constructed. Across collider, neutrino, cosmic, and rare-event
+experiments, these facilities function as massive and continuous
+data generators, producing petabytes of rich, structured, curated
+data annually, while discarding a majority of the raw information
+due to bandwidth, storage, or latency constraints. The scale,
+complexity, and structure of these datasets align with the strengths
+of modern Artificial Intelligence (AI): high-dimensional pattern
+recognition, rare-signal inference, low- latency decision making,
+and the orchestration of complex systems spanning hardware, software,
+and human expertise. AI can play a transformative role by enabling
+experiments to extract and retain more information from data,
+extending the discovery potential, and reducing the time from
+data-taking to discovery. It can also improve the efficiency and
+sustainability of long-running facilities and increase sensitivity
+to subtle or unexpected phenomena. Now is a pivotal moment: experiments
+currently in operation or under construction will define the
+scientific output of particle physics for the next several decades,
+while unprecedented national investments in AI, advanced computing,
+and workforce development create a rare opportunity to couple our
+scientific challenges with foundational AI research. This 
+[recent whitepaper](https://arxiv.org/abs/2602.17582)
+presents our community vision and an actionable plan to seize this
+moment.
+
+![AIML](/assets/images/aiml2026-graphic.png){:style="float: right;margin-right: 7px;margin-top: 7px;width: 35%;"}
+
+Our vision is to embed AI end-to-end across the experimental
+lifecycle, from the co-design of accelerators and detectors to
+intelligent sensing, data acquisition, autonomous operations and
+cali- bration, and accelerated analysis for discovery. In this
+“AI-Native” paradigm, experiments become continuously learning
+systems: design and opera- tions are optimized over time, more
+information is retained and understood, and scientists spend less
+time on mechanical steps and more on scientific interpretation -
+directly advancing the national goal of dramatically increasing
+research output and discovery. This approach also maximizes the
+return on current investments and enables next- generation facilities
+to be conceived and operated with AI as a core capability.
+
+
+**Grand Challenges:** This vision is organized around four Grand
+Challenges that form a self-reinforcing engine for an AI-Native
+ecosystem. ***Accelerated Experimental Design*** uses differentiable, 
+agent-guided optimization to co-design accelerators,
+and detectors so that ambitious ideas become buildable, higher-impact
+experiments on faster timescales with reduced technical risk and
+costs. ***Intelligent Sensing & Instrumentation*** moves intelligence
+upstream via trigger-less or AI-assisted readout, physics-aware
+compression, and real-time inference to preserve rare, unexpected,
+or time-critical signals while operating within bandwidth and storage
+constraints. ***Autonomous Experiments*** transforms labor-intensive,
+reactive operations into proactive, resilient, and continuously
+calibrated systems, capturing more high-quality data with less
+downtime and preserving institutional knowledge over decades-long
+experiment lifetimes. ***From Data to Discovery*** integrates foundation
+models, fast AI-enabled reconstruction and simulation, and
+agent-orchestrated workflows to compress analysis cycles by orders
+of magnitude and open new regions of theory space to exploration.
+Advancing any one challenge amplifies the others, expanding scientific
+reach and productivity while positioning the U.S. as a global leader
+in AI-powered particle physics.
 
 <!--
-A key point to note is that these were engineered discoveries. Guided by the developing Standard Model, we knew roughly the kind of things that we were looking for, even if we did not know exactly where and how it would appear. The physics community prepared for each new experimental facility with detailed strategies for the searches with titles such as “The Higgs Hunter’s Guide” and “The BaBar Physics Book”.
-
-Despite its success, the Standard Model is known to be an incomplete description of nature. Many big mysteries still exist: What is dark matter? What is the physics behind neutrino mass? Where does the spin of the proton originate? What is the origin of the matter-antimatter asymmetry in the universe? Answering these questions likely requires “Beyond the Standard Model (BSM)” physics. Unlike the past decades, we do not have pre-engineered models from which to start. Even the most theoretically popular models for BSM physics discovery (e.g. Supersymmetry in various incarnations) have not led to discoveries to date.
+Figure 1: Grand Challenges spanning the experimental lifecycle in particle
+physics.  
 -->
-
-A key question is how particle physics research can be open to the widest possible set of potential discoveries, and understand how to interpret them once seen.
-AI and Machine Learning offer exactly this potential: if we are
-successful with CLARIPHY, we can significantly expand the discovery
-reach of all particle physics experiments by changing the nature
-of how we approach designing experiments, the community vision of
-data and its potential and our overall approach to discovery.
-This is a moonshot, but the impact will be enormous if successful.
-
-CLARIPHY is working to bring together the AI and particle physics communities to work jointly on research that will drive discoveries in both fields. The potential for transformative progress in AI results from engaging with particle physics research because it encompasses a broad spectrum of types of data and learning tasks all within the framework of a single domain with a highly mathematical theoretical underpinning and copious amounts of data, including from detailed simulations. The range of tasks spans from performing high-precision measurements on enormous data sets to the discovery of extremely rare phenomena, providing a variety of challenges for AI. 
-
-The discovery potential in particle physics is tremendously enhanced because AI approaches are ideally suited to extracting high-level insights from low-level, high-dimensional data. AI has the potential to make physics analysis more sensitive, faster, and more robust. By fostering the intellectual community as well as providing the necessary cyberinfrastructure, including hosted datasets, reference algorithms, and documentation, CLARIPHY will serve as a vital nexus to facilitate both AI and particle physics breakthroughs that would not emerge from those fields in isolation.
 
 <!--
 ![CLARIPHY Institutions Map](/assets/images/clariphy-map.png)
