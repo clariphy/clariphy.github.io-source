@@ -6,7 +6,7 @@
 
 // MK Color Scheme
 $custom-100: #1E3040 !default;  // steel blue
-$custom-200: #364959 !default;  // dark blue
+$custom-200: rgb(28, 46, 78) !default;  // dark blue
 $custom-300: #6A7349 !default;  // dark pea green
 $custom-400: #B4BF5E !default;  // pea green
 $custom-500: #D5D962 !default;  // light pea green
@@ -14,7 +14,7 @@ $custom-600: #402E1E !default;  // #1E3040 complement
 
 // Colors that are used below
 $primary: $custom-100;
-$primary-accent: $custom-400;
+$primary-accent: rgb(255, 232, 120);
 $secondary: $custom-500;
 $secondary-accent: $custom-200;
 $tertiary: $custom-300;
@@ -43,9 +43,9 @@ $font-family-base: Helvetica, Arial, sans-serif, -apple-system;
 $font-family-heading: 'Playfair Display', serif, -apple-system;
 
 // Footer
-$footer-background-color: $primary;
+$footer-background-color: rgb(28, 46, 78);
 $footer-text-color: $white;
-$sub-footer-background-color: $secondary;
+$sub-footer-background-color: rgb(255, 232, 120);
 $sub-footer-text-color: $black;
 
 // Bootstrap 5
@@ -113,20 +113,52 @@ header.masthead {
   //margin-bottom: 0;
   //margin-top: 55px;
   background-color: #1E3040;
-  height: 250px;
+  height: 188px;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: auto;
-  background-size: auto 165%;
+  background-size: cover;
   @media only screen and (min-width: 768px) {
-    background-size: auto 135%;
-    height: 500px;
+    height: 375px;
+  }
+
+  .overlay {
+    height: 100%;
+    display: flex;
+    align-items: center;
   }
 
   .site-heading {
     padding: 15px 0px 35px;
     @media only screen and (min-width: 768px) {
       padding: 40px 0px 80px;
+    }
+  }
+
+  .banner-title {
+    color: rgb(255, 232, 120);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-align: center;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+    margin-bottom: 0.3rem;
+    @media only screen and (min-width: 768px) {
+      font-size: 5rem;
+    }
+  }
+
+  .banner-subtitle {
+    color: rgb(255, 232, 120);
+    font-family: 'Merriweather', serif;
+    font-size: 1rem;
+    font-weight: 400;
+    font-style: italic;
+    text-align: center;
+    line-height: 1.5;
+    text-shadow: 0 1px 6px rgba(0, 0, 0, 0.6);
+    @media only screen and (min-width: 768px) {
+      font-size: 1.4rem;
     }
   }
 
@@ -221,7 +253,7 @@ main {
     flex-flow: row wrap;
     margin: 5px 0 10px 0;
     //old background-color: scale-color($secondary, $lightness:60%);
-    background-color: $custom-500;
+    background-color: rgb(255, 232, 120);
     border-radius: 6px;
 
     .date, .location {
@@ -270,7 +302,7 @@ main {
     flex-flow: row wrap;
     margin: 5px 0 10px 0;
     //old background-color: scale-color($secondary, $lightness:60%);
-    background-color: $custom-500;
+    background-color: rgb(255, 232, 120);
     border-radius: 6px;
 
     .year, .title {
@@ -317,9 +349,23 @@ main {
 
 // White links against a dark background
 .navbar-dark {
+  background-color: rgb(28, 46, 78) !important;
   border-bottom-color: $primary-accent;
   border-bottom-style: solid;
   border-bottom-width: 3px;
+
+  .dropdown-menu {
+    background-color: rgb(28, 46, 78);
+    border-color: rgba(255, 255, 255, 0.15);
+  }
+
+  .dropdown-item {
+    color: white;
+    &:hover, &:focus {
+      color: white;
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+  }
 }
 
 
