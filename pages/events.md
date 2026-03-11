@@ -27,6 +27,7 @@ order grouped by month. Years are derived dynamically from the data.
 {% if month_key != current_month_key %}
 {% unless current_month_key == "" %}</ul>{% endunless %}
 {% assign current_month_key = month_key %}
+<br>
 <h5>{{ event.startdate | date: "%B, %Y" }}</h5>
 <ul>
 {% endif %}
