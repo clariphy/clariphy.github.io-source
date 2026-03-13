@@ -9,6 +9,14 @@ title: CLARIPHY Collaboration
 <div>
     {% for uniindex in institution_list %}
       {%- assign univ = site.data.universities[uniindex] -%}
+      {%- assign active_count = 0 -%}
+      {%- for memberid in univ.personnel -%}
+        {%- assign member = site.data.people[memberid] -%}
+        {%- if member.active and member.active == true -%}
+          {%- assign active_count = active_count | plus: 1 -%}
+        {%- endif -%}
+      {%- endfor -%}
+      {% if active_count > 0 %}
       <h5>{{univ.name}}</h5>
 <div class="container pt-1 pb-3">
   <div class="row">
@@ -33,6 +41,7 @@ title: CLARIPHY Collaboration
       {% endfor %}
   </div>
 </div>
+      {% endif %}
     {% endfor %}
 </div>
 
