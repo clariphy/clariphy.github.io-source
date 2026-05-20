@@ -21,8 +21,13 @@ order grouped by month. Years are derived dynamically from the data.
 {% endfor %}
 {% assign all_events = all_events | sort: 'startdate' | reverse %}
 
+{% assign now_ts = "now" | date: "%s" | plus: 0 %}
+{% assign cutoff_ts = now_ts | minus: 7776000 %}
+
 {% assign current_month_key = "" %}
 {% for event in all_events %}
+{% assign event_ts = event.startdate | date: "%s" | plus: 0 %}
+{% if event_ts >= cutoff_ts %}
 {% assign month_key = event.startdate | date: "%Y-%m" %}
 {% if month_key != current_month_key %}
 {% unless current_month_key == "" %}</ul>{% endunless %}
@@ -32,6 +37,7 @@ order grouped by month. Years are derived dynamically from the data.
 <ul>
 {% endif %}
 <li>{{ event.startdate | date: "%-d %b" }}{{ event.enddate | date: " - %-d %b" }}, {{ event.startdate | date: "%Y" }} - <a href="{{ event.meetingurl }}">{{ event.name }}</a> (<i>{{ event.location }}</i>)</li>
+{% endif %}
 {% endfor %}
 {% if current_month_key != "" %}</ul>{% endif %}
 <br>
