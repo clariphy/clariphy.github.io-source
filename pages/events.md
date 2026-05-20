@@ -4,7 +4,7 @@ layout: default
 title: CLARIPHY Events
 ---
 <center> 
-<h3> CLARIPHY Events</h3>
+<h3>CLARIPHY Events</h3>
 </center>
 
 <br>
