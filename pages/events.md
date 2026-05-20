@@ -23,11 +23,12 @@ order grouped by month. Years are derived dynamically from the data.
 
 {% assign now_ts = "now" | date: "%s" | plus: 0 %}
 {% assign cutoff_ts = now_ts | minus: 7776000 %}
+{% assign cutoff_str = cutoff_ts | date: "%Y-%m-%d" %}
 
 {% assign current_month_key = "" %}
 {% for event in all_events %}
-{% assign event_ts = event.startdate | date: "%s" | plus: 0 %}
-{% if event_ts >= cutoff_ts %}
+{% assign event_date_str = event.startdate | date: "%Y-%m-%d" %}
+{% if event_date_str >= cutoff_str %}
 {% assign month_key = event.startdate | date: "%Y-%m" %}
 {% if month_key != current_month_key %}
 {% unless current_month_key == "" %}</ul>{% endunless %}
