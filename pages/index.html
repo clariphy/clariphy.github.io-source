@@ -58,18 +58,11 @@ required for the challenges of data intensive scientific research at the High Lu
 <div class="mainpage-events mainpage-core">
 
 {% comment %}
-Go through the list and produce a list of upcoming events as well as a
-list of events in the past 90 days. Treat 6 days ago as "now" so that
-ongoing events don't get prematurely flagged as recent.
+Go through the list and produce a list of upcoming events as well as
+events from the past 6 months (182 days).
 {% endcomment %}
 
-{% assign currentdatecmp = 'now' | date: "%s" %}
-{% assign onedayago = 'now' | date: "%s" | minus: 86400 | date: "%b %d, %Y %I:%M %p -0500" | uri_encode | replace: "+","%20" | date: "%s"%}
-{% assign sixdaysago = 'now' | date: "%s" | minus: 518400 | date: "%b %d, %Y %I:%M %p -0500" | uri_encode | replace: "+","%20" | date: "%s"%}
-{% assign sixweeksago = 'now' | date: "%s" | minus: 3628800 | date: "%b %d, %Y %I:%M %p -0500" | uri_encode | replace: "+","%20" | date: "%s"%}
-{% assign twelveweeksago = 'now' | date: "%s" | minus: 7257600 | date: "%b %d, %Y %I:%M %p -0500" | uri_encode | replace: "+","%20" | date: "%s"%}
-{% assign ninetydaysago = 'now' | date: "%s" | minus: 7776000| date: "%b %d, %Y %I:%M %p -0500" | uri_encode | replace: "+","%20" | date: "%s"%}
-{% assign sixtydaysago = 'now' | date: "%s" | minus: 5184000 | date: "%b %d, %Y %I:%M %p -0500" | uri_encode | replace: "+","%20" | date: "%s"%}
+{% assign sixmonthsago = 'now' | date: "%s" | minus: 15724800 | date: "%b %d, %Y %I:%M %p -0500" | uri_encode | replace: "+","%20" | date: "%s"%}
 
 {% assign selected_events = "" | split: ',' %}
 
@@ -80,7 +73,7 @@ ongoing events don't get prematurely flagged as recent.
 {% for event_hash in site.data.events %}
   {% assign event = event_hash[1] %}
   {% assign startdatecmp = event.startdate | date: "%s" %}
-  {% if startdatecmp >= sixtydaysago %}
+  {% if startdatecmp >= sixmonthsago %}
      {% assign selected_events = selected_events | push: event %}
   {% endif %}
 {% endfor %}
