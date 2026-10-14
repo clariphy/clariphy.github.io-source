@@ -40,12 +40,13 @@ Positions with no deadline are listed afterwards, by institution.
 <ul>
 {% for job in open_jobs %}
 <li>
-<a href="{{ job.url }}">{{ job.title }}</a> - {{ job.institution }}{% if job.location %} (<i>{{ job.location }}</i>){% endif %}
-<br>
-{% if job.rank %}{{ job.rank }}.{{ " " }}{% endif %}
-{% if job.deadline %}Application deadline: {{ job.deadline | date: "%-d %B %Y" }}.{% else %}No deadline given; applications accepted until the position is filled.{% endif %}
-{% if job.applyurl %}{{ " " }}(<a href="{{ job.applyurl }}">apply here</a>){% endif %}
-{% if job.description %}<br>{{ job.description }}{% endif %}
+<a href="{{ job.url }}">{{ job.title }}</a>
+<ul>
+<li>Institution: {{ job.institution }}{% if job.location %} ({{ job.location }}){% endif %}</li>
+{% if job.rank %}<li>Rank: {{ job.rank }}</li>{% endif %}
+<li>Deadline: {% if job.deadline %}{{ job.deadline | date: "%-d %B %Y" }}{% else %}none given; applications accepted until the position is filled{% endif %}</li>
+{% if job.description %}<li>{{ job.description }}</li>{% endif %}
+</ul>
 </li>
 {% endfor %}
 </ul>
