@@ -37,7 +37,7 @@ Positions with no deadline are listed afterwards, by institution.
 {% if open_jobs.size == 0 %}
 **Coming Soon**
 {% else %}
-<ul>
+<ul class="jobs-list">
 {% for job in open_jobs %}
 <li>
 <a href="{{ job.url }}">{{ job.title }}</a>

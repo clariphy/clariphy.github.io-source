@@ -1,0 +1,28 @@
+// The jobs page builds its list directly as raw HTML (see pages/jobs.md),
+// outside of the .content wrapper, so it doesn't inherit that component's
+// list styling. The site's base ul/ol reset (components/type) zeroes out
+// list padding/margin entirely, which otherwise leaves nested <ul>s flush
+// with their parent instead of indented. Restore normal list indentation,
+// scoped to this page only.
+
+.jobs-list {
+  padding-left: 1.25rem;
+  list-style: disc;
+  margin-bottom: 20px;
+
+  li {
+    margin-bottom: 10px;
+    line-height: 1.56;
+    color: $steel;
+  }
+
+  ul {
+    padding-left: 1.25rem;
+    margin-top: 6px;
+    list-style: circle;
+
+    li {
+      margin-bottom: 4px;
+    }
+  }
+}
