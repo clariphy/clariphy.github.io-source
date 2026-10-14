@@ -1,0 +1,20 @@
+# One file per open position. Fields:
+#   title       - (required) the title of the position
+#   institution - (required) the hiring institution
+#   url         - (required) link to the external job ad
+#   deadline    - application deadline, as YYYY-MM-DD. Leave blank if there is
+#                 none, or if it is not known. Positions are removed from the
+#                 jobs page automatically once the deadline has passed.
+#   location    - city/state/country of the position (optional)
+#   rank        - e.g. "Postdoctoral researcher", "Open rank faculty" (optional)
+#   applyurl    - the institution's own application page, if the job ad above
+#                 is an aggregator such as InspireHEP (optional)
+#   description - a sentence or two of additional detail (optional)
+title: Faculty position at the interface of AI and physics
+institution: Georgia Institute of Technology
+url: https://inspirehep.net/jobs/3198864
+deadline: 2026-11-15
+location: Atlanta, Georgia, USA
+rank: Open rank, tenured/tenure-track
+applyurl: https://hr.gatech.edu/careers
+description:
